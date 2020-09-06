@@ -1,0 +1,105 @@
+.publicTable {
+  .el-table {
+    border: 1px solid #e5cecf;
+  }
+
+  .el-table::before {
+    height: 0;
+  }
+
+  th {
+    background-color: #ffe5e6 !important;
+    color: #333;
+    font-family: 'kaiti';
+    font-size: 22px;
+    font-weight: bold;
+    height: 60px;
+  }
+
+  .el-table td,
+  .el-table th.is-leaf {
+    border: none;
+  }
+  td {
+    padding: 0;
+  }
+  tr {
+    color: #333;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .el-table__row {
+    background-color: transparent;
+  }
+
+  .el-table__empty-block {
+    background-color: transparent;
+
+    >span {
+      color: #333;
+    }
+  }
+  .el-table--enable-row-transition .el-table__body td {
+    padding: 0;
+    height: 60px;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #fff7f0;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: #fff7f0;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped:hover td {
+    background-color: #fff;
+  }
+
+}
+
+.publicDialog {
+  .el-dialog {
+    user-select: none;
+    background-color: #fff;
+    // background-image: url(~@/assets/image/dialog.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .el-dialog__header {
+      background-color: #c2272c;
+      padding: 0;
+      height: 54px;
+      line-height: 54px;
+      padding-left: 20px;
+      // text-align: center;
+
+      .el-dialog__title {
+        // font-family: 'KaiTi';
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 54px;
+        color: #ffffff;
+        // border-left: 6px solid #fff;
+        // padding-left: 8px;
+      }
+    }
+
+    .el-icon-close {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .el-dialog__body {
+      padding: 30px;
+    }
+  }
+}
+
+html,
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
