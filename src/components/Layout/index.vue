@@ -16,7 +16,7 @@
           </li>
         </ul>
       </div>
-      <div class="user">
+      <div class="user" @click="Logout">
         <i class="el-icon-video-play"></i>
         <span>Admin</span>
       </div>
@@ -45,6 +45,23 @@ export default {
       List: [],
       active: ""
     };
+  },
+  methods:{
+    //退出登录
+    Logout(){
+      this.$confirm('是否退出?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$message.success('退出成功');
+          this.$router.push({
+            path:"/"
+          })
+        }).catch(() => {
+          this.$message.info('已取消退出');          
+        });
+    }
   }
 };
 </script>
