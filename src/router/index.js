@@ -378,6 +378,10 @@ const routes = [{
     component: () => import("@/views/404")
   },
   {
+    path: "/test",
+    component: () => import("@/views/HelloWorld")
+  },
+  {
     path: "*",
     redirect: "/404"
   }
