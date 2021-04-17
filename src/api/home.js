@@ -17,7 +17,7 @@ export function cancellation() {
     method: "get",
   });
 }
-// 上次附件
+// 上传附件
 export function fileupload(params) {
   return UploadFile(`${API}/file/upload`, params);
 }

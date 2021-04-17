@@ -4,7 +4,7 @@
       <!-- <img src="../../assets/images/jjw.png" alt /> -->
     </div>
     <div class="title">
-      <p class="title_name">监 督 互 联 平 台</p>
+      <p class="title_name">后台管理系统</p>
     </div>
     <div class="login_all">
       <div class="login_content">

@@ -1,7 +1,7 @@
 <template>
   <el-container class="Layout">
     <el-header height="100px" class="header">
-      <div class="title">四个监督协同共享</div>
+      <div class="title">后台管理系统</div>
       <div class="nav">
         <ul>
           <li
